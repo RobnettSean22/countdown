@@ -4,10 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+    <title></title>
   </head>
   <body>
-    <div id="timer"></div>
+    <div id="timer">
+      <div>
+        <h1 id="days"></h1>
+      </div>
+      <div>
+        <h1 id="hours"></h1>
+      </div>
+      <div>
+        <h1 id="minutes"></h1>
+      </div>
+      <div>
+        <h1 id="seconds"></h1>
+      </div>
+    </div>
     <script type="text/javascript">
       //set the date you are counting down too
       let endDate = new Date("Jan 7, 2020 00:00:00").getTime();
@@ -25,8 +39,28 @@
         let minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
         let seconds = Math.floor((difference % (1000 * 60)) / 1000);
 
-        document.getElementById("timer").innerText =
-          numDays + ":" + numHours + ":" + minutes + ":" + seconds;
+        numDays < 10
+          ? "0" + numDays
+          : numDays || numbHours < 10
+          ? "0" + numHours
+          : numHours || minutes < 10
+          ? "0" + minutes
+          : minutes || seconds < 10
+          ? "0" + seconds
+          : seconds;
+
+        let daysLeft = (document.getElementById("days").innerText =
+          numDays + "D");
+        let hoursLeft = (document.getElementById("hours").innerText =
+          numHours + "H");
+        const minutesLeft = (document.getElementById("minutes").innerText =
+          minutes + "M");
+        const secondsLeft = (document.getElementById(
+          "seconds"
+        ).innerText = seconds);
+
+        // document.getElementById("timer").innerText =
+        //   daysLeft + hoursLeft + minutesLeft + secondsLeft;
       }, 1000);
     </script>
   </body>
