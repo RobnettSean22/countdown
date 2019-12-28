@@ -39,16 +39,20 @@ body #labels label {
   text-shadow: 0 0 6px #ff0000, 0 0 9px #0000ff;
 }
 
+body #labels .underD {
+  margin: 0% 0% 0% 4%;
+}
+
 body #labels .underH {
-  margin: 0% 0% 0% 2%;
+  margin: 0% 0% 0% 6%;
 }
 
 body #labels .underM {
-  margin: 0% 0% 0% 2%;
+  margin: 0% 0% 0% 3%;
 }
 
 body #labels .underS {
-  margin-right: -5%;
+  margin-right: 0%;
 }
 
 body #timer {
