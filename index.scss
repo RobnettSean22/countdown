@@ -51,7 +51,7 @@ body {
       h1 {
         color: white;
         text-shadow: 0 0 6px #ff0000, 0 0 9px #0000ff;
-        font-size: 60px;
+        font-size: 74px;
         font-weight: bold;
       }
     }
@@ -81,6 +81,38 @@ body {
     box-sizing: border-box;
   }
   .box .fourth {
+    position: absolute;
+
+    width: 12%;
+    height: 24%;
+    display: block;
+    box-sizing: border-box;
+  }
+  .box .first2 {
+    position: absolute;
+
+    width: 14%;
+    height: 21%;
+    display: block;
+    box-sizing: border-box;
+  }
+  .box .second2 {
+    position: absolute;
+
+    width: 12%;
+    height: 24%;
+    display: block;
+    box-sizing: border-box;
+  }
+  .box .third2 {
+    position: absolute;
+
+    width: 14%;
+    height: 21%;
+    display: block;
+    box-sizing: border-box;
+  }
+  .box .fourth2 {
     position: absolute;
 
     width: 12%;

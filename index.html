@@ -22,6 +22,7 @@
         <span class="second"></span>
         <span class="third"></span>
         <span class="fourth"></span>
+
         <h1 id="hours"></h1>
       </div>
       <div class="box">
@@ -62,28 +63,16 @@
         let minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
         let seconds = Math.floor((difference % (1000 * 60)) / 1000);
 
-        numDays < 10
-          ? "0" + numDays
-          : numDays || numbHours < 10
-          ? "0" + numHours
-          : numHours || minutes < 10
-          ? "0" + minutes
-          : minutes || seconds < 10
-          ? "0" + seconds
-          : seconds;
+        let D = numDays < 10 ? "0" + numDays : numDays;
+        let H = numHours < 10 ? "0" + numHours : numHours;
+        let S = seconds < 10 ? "0" + seconds : seconds;
+        let M = minutes < 10 ? "0" + minutes : minutes;
 
-        let daysLeft = (document.getElementById("days").innerText =
-          numDays + "D");
-        let hoursLeft = (document.getElementById("hours").innerText =
-          numHours + "H");
-        const minutesLeft = (document.getElementById("minutes").innerText =
-          minutes + "M");
-        const secondsLeft = (document.getElementById(
-          "seconds"
-        ).innerText = seconds);
-
-        // document.getElementById("timer").innerText =
-        //   daysLeft + hoursLeft + minutesLeft + secondsLeft;
+        console.log(M);
+        document.getElementById("days").innerText = D;
+        document.getElementById("hours").innerText = H;
+        document.getElementById("minutes").innerText = M;
+        document.getElementById("seconds").innerText = S;
       }, 1000);
     </script>
   </body>

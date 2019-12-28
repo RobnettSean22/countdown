@@ -89,7 +89,7 @@ body #timer .box {
 body #timer .box h1 {
   color: white;
   text-shadow: 0 0 6px #ff0000, 0 0 9px #0000ff;
-  font-size: 60px;
+  font-size: 74px;
   font-weight: bold;
 }
 
@@ -121,6 +121,42 @@ body .box .third {
 }
 
 body .box .fourth {
+  position: absolute;
+  width: 12%;
+  height: 24%;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body .box .first2 {
+  position: absolute;
+  width: 14%;
+  height: 21%;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body .box .second2 {
+  position: absolute;
+  width: 12%;
+  height: 24%;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body .box .third2 {
+  position: absolute;
+  width: 14%;
+  height: 21%;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body .box .fourth2 {
   position: absolute;
   width: 12%;
   height: 24%;
