@@ -6,15 +6,54 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   overflow: hidden;
 }
 
+body #labels {
+  width: 71%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #labels label {
+  font-size: 44px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
+}
+
+body #labels .underH {
+  margin: 0% 0% 0% 2%;
+}
+
+body #labels .underM {
+  margin: 0% 0% 0% 2%;
+}
+
+body #labels .underS {
+  margin-right: -5%;
+}
+
 body #timer {
-  width: 50%;
-  height: 90%;
+  width: 67%;
+  height: 25%;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -28,8 +67,10 @@ body #timer {
 }
 
 body #timer .box {
-  width: 15%;
-  height: 15%;
+  width: 22%;
+  height: 86%;
+  background: rgba(0, 0, 0, 0.329);
+  border: white 1px solid;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -42,16 +83,42 @@ body #timer .box {
 }
 
 body #timer .box h1 {
-  color: white;
-  font-size: 41px;
+  color: #1740f7;
+  font-size: 60px;
+  font-weight: bold;
 }
 
-body .box span {
+body .box .first {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  width: 14%;
+  height: 21%;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body .box .second {
+  position: absolute;
+  width: 12%;
+  height: 24%;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body .box .third {
+  position: absolute;
+  width: 14%;
+  height: 21%;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body .box .fourth {
+  position: absolute;
+  width: 12%;
+  height: 24%;
   display: block;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -82,7 +149,7 @@ body .box span:before {
   position: absolute;
   width: 100%;
   height: 2px;
-  background: #50dfdb;
+  background: #20c953;
   -webkit-animation: animate 4s linear infinite;
           animation: animate 4s linear infinite;
 }
